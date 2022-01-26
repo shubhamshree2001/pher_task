@@ -58,9 +58,9 @@ class _HomeState extends State<Home> {
         context,
         MaterialPageRoute(
             builder: (context) => Result(
-                catererAmount: int.parse(_controller1.text),
-                decoratoramount: int.parse(_controller2.text),
-                photographerAmount: int.parse(_controller3.text))),
+                catererAmount: double.parse(_controller1.text),
+                decoratoramount: double.parse(_controller2.text),
+                photographerAmount: double.parse(_controller3.text))),
       );
     }
   }

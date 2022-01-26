@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 class Result extends StatefulWidget {
-  int catererAmount;
-  int photographerAmount;
-  int decoratoramount;
+  double catererAmount;
+  double photographerAmount;
+  double decoratoramount;
   Result({
     Key? key,
     this.catererAmount = 0,
@@ -23,7 +23,7 @@ class _ResultState extends State<Result> {
     Color(0xff0984e3),
     Color(0xfffd79a8),
   ];
-  int sum = 0;
+  double sum = 0;
   @override
   void initState() {
     // TODO: implement initState
@@ -32,9 +32,9 @@ class _ResultState extends State<Result> {
         widget.decoratoramount +
         widget.photographerAmount;
     dataMap = {
-      "Caterer": double.parse(widget.catererAmount.toString()),
-      "Photographer": double.parse(widget.photographerAmount.toString()),
-      "Deorator": double.parse(widget.decoratoramount.toString()),
+      "Caterer": (widget.catererAmount * 100) / sum,
+      "Photographer": (widget.photographerAmount * 100) / sum,
+      "Deorator": (widget.decoratoramount * 100) / sum,
     };
   }
 
@@ -79,6 +79,24 @@ class _ResultState extends State<Result> {
                 DataCell(Text(widget.decoratoramount.toString())),
               ]),
             ],
+          ),
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text("Total",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                    )),
+                Text(sum.toString(),
+                    style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.w400,
+                    )),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(40.0),
