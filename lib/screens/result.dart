@@ -77,7 +77,7 @@ class _ResultState extends State<Result> {
               DataRow(cells: [
                 const DataCell(Text('Decorator')),
                 DataCell(Text(widget.decoratoramount.toString())),
-              ]),
+              ])
             ],
           ),
           Padding(
