@@ -5,7 +5,7 @@ The basic home page contains the three text fields and the submit button onpress
 chart type used is ring.
 
 
-[<img src="screenshots/task1.jpeg" width="290">](screenshots/task1.jpeg)
-[<img src="screenshots/task2.jpeg" width="290">](screenshots/task2.jpeg)
-[<img src="screenshots/task3.jpeg" width="290">](screenshots/task3.jpeg)
+![alt_text](https://github.com/shubhamshree2001/pher_task/blob/ticket1/screenshots/task1.jpeg)
+<!-- [<img src="screenshots/task2.jpeg" width="290">](screenshots/task2.jpeg)
+[<img src="screenshots/task3.jpeg" width="290">](screenshots/task3.jpeg) -->
 
